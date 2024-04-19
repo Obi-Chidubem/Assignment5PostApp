@@ -7,7 +7,7 @@ app = express();
 
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: process.env.SESSION_SECRET || 'SomeRandomLongText',
     resave: false,
     saveUninitialized: true,
     cookie: { maxAge: 1000 * 60 * 60 },
