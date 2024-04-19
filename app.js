@@ -7,7 +7,7 @@ app = express();
 
 app.use(
   session({
-    secret: process.env.SESSION_SECRET || 'SomeRandomLongText',
+    secret: process.env.SESSION_SECRET || "SomeRandomLongText",
     resave: false,
     saveUninitialized: true,
     cookie: { maxAge: 1000 * 60 * 60 },
@@ -20,7 +20,8 @@ app.set("views", "views");
 
 // connecting to the db
 const db = require("./database");
-db.connectToMongoDB(process.env.MONGODB_CONNECTION_URI);
+db.connectToMongoDB("mongodb://localhost:27017/SocialMedia"); //Don't do this. instead, put it in an env file and call it from there.
+//I only did this for testing.
 
 //The routes callfunctions
 const authRouter = require("./routes/authRoute");
