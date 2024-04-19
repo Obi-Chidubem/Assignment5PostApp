@@ -1,0 +1,9 @@
+I think I did a pretty good job, all things considered.
+Used mongoDB with Passport Session instead of JWt (There was nothing specified for bootlegging, so i figured it was fine.)
+I think session works better fo rthis usecase since it is a blog for non-dev users. 
+
+run 'npm install' to get all dependencies
+for a better experience, plase run this in your browser as the client. 
+You can a VS code client (POstman or TC), but it just ain't as fun
+
+P.S. I hate tests.

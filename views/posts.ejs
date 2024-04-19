@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/posts/post" method="post">
+      <p>Your Post Title.</p>
+      <input type="text" name="header" placeholder="Title." required />
+      <br /><br />
+      <p>Your Post.</p>
+      <input
+        type="text"
+        name="body"
+        placeholder="Write Text Here."
+        required
+        height="100"
+      />
+      <br /><br />
+      <p>Do You Have Collaborators? Give A Shoutout!</p>
+      <input type="text" name="collaborators" placeholder="username" />
+      <br>
+      <button type="submit">Submit Post!</button>
+    </form>
+  </body>
+</html>

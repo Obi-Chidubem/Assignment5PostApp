@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Posts By All Users</p>
+    <br />
+    <br />
+    <%posts.forEach( function(post){%>
+    <p><%=post.header%></p>
+    <p><%=post.body%></p>
+    <em>Post By: <%=post.userName%></em>
+    <hr />
+    <%})%>
+  </body>
+</html>
