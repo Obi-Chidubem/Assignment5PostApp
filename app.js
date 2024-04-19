@@ -18,9 +18,9 @@ app.use(
 app.set("view engine", "ejs");
 app.set("views", "views");
 
-//connecting to the db
-// const db = require("./database");
-// db.connectToMongoDB(process.env.MONGODB_CONNECTION_URI);
+// connecting to the db
+const db = require("./database");
+db.connectToMongoDB(process.env.MONGODB_CONNECTION_URI);
 
 //The routes callfunctions
 const authRouter = require("./routes/authRoute");
